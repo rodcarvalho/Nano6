@@ -11,6 +11,7 @@
 		BD27191526D4555800525EDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD27191426D4555800525EDF /* ContentView.swift */; };
 		BD27191726D4555A00525EDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD27191626D4555A00525EDF /* Assets.xcassets */; };
 		BD27191A26D4555A00525EDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD27191926D4555A00525EDF /* Preview Assets.xcassets */; };
+		BD27192226D4567A00525EDF /* LikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD27192126D4567A00525EDF /* LikeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		BD27191626D4555A00525EDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD27191926D4555A00525EDF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BD27191B26D4555A00525EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD27192126D4567A00525EDF /* LikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				BD27191226D4555800525EDF /* The_ExperienceApp.swift */,
 				BD27191426D4555800525EDF /* ContentView.swift */,
+				BD27192126D4567A00525EDF /* LikeView.swift */,
 				BD27191626D4555A00525EDF /* Assets.xcassets */,
 				BD27191B26D4555A00525EDF /* Info.plist */,
 				BD27191826D4555A00525EDF /* Preview Content */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD27192226D4567A00525EDF /* LikeView.swift in Sources */,
 				BD27191526D4555800525EDF /* ContentView.swift in Sources */,
 				BD27191326D4555800525EDF /* The_ExperienceApp.swift in Sources */,
 			);
