@@ -11,9 +11,14 @@ struct LikeView: View {
 	@State private var isLiked: Bool = false
     var body: some View {
 		ZStack{
-			Color.black
 			HearthButton(isLiked: $isLiked)
 		}.ignoresSafeArea()
+		.background(
+			Image("background-black")
+				.resizable()
+				.edgesIgnoringSafeArea(.all)
+				.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height, alignment: .center)
+		)
 	}
 }
 
