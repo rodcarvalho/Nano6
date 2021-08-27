@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		008C45B026D87A7300731433 /* CustomToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008C45AF26D87A7300731433 /* CustomToggleStyle.swift */; };
 		BD27191326D4555800525EDF /* The_ExperienceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD27191226D4555800525EDF /* The_ExperienceApp.swift */; };
 		BD27191526D4555800525EDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD27191426D4555800525EDF /* ContentView.swift */; };
 		BD27191726D4555A00525EDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD27191626D4555A00525EDF /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		008C45AF26D87A7300731433 /* CustomToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToggleStyle.swift; sourceTree = "<group>"; };
 		BD27190F26D4555800525EDF /* The_Experience.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = The_Experience.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD27191226D4555800525EDF /* The_ExperienceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_ExperienceApp.swift; sourceTree = "<group>"; };
 		BD27191426D4555800525EDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			children = (
 				BD27191226D4555800525EDF /* The_ExperienceApp.swift */,
 				BD27191426D4555800525EDF /* ContentView.swift */,
+				008C45AF26D87A7300731433 /* CustomToggleStyle.swift */,
 				BD27191626D4555A00525EDF /* Assets.xcassets */,
 				BD27191B26D4555A00525EDF /* Info.plist */,
 				BD27191826D4555A00525EDF /* Preview Content */,
@@ -140,6 +143,7 @@
 			files = (
 				BD27191526D4555800525EDF /* ContentView.swift in Sources */,
 				BD27191326D4555800525EDF /* The_ExperienceApp.swift in Sources */,
+				008C45B026D87A7300731433 /* CustomToggleStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
