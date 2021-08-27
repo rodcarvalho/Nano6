@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var onOff: Bool = false
+    
     var body: some View {
         Home()
+//         Toggle.init("Nano6",isOn: $onOff)
+//             .toggleStyle(NanoCustomToggle())
     }
 }
 
