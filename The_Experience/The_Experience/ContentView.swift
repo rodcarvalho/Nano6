@@ -9,12 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var onOff: Bool = false
-    
     var body: some View {
         Home()
-//         Toggle.init("Nano6",isOn: $onOff)
-//             .toggleStyle(NanoCustomToggle())
+
     }
 }
 
@@ -27,7 +24,8 @@ struct ContentView_Previews: PreviewProvider {
 struct Home: View {
     
     @State var selectedTab = "home"
-    
+	@State private var onOff: Bool = false
+	@State var checked = false
     
     init () {
         UITabBar.appearance().isHidden = true
@@ -42,17 +40,40 @@ struct Home: View {
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)) {
         TabView(selection: $selectedTab) {
             
-            Color.red
-                .ignoresSafeArea(.all,edges: .all)
-                .tag("home")
-            
+			ZStack {
+			Color.red.ignoresSafeArea(.all,edges: .all)
+				
+//			Colocar a view para aparecer na view vermelha
+				(Text("Tip: ")
+					.foregroundColor(.white)
+					.fontWeight(.heavy)
+					.font(.system(.title)) +
+					Text("Navigate through the menu tabs below to experience the micro interactions")
+					.foregroundColor(.white)
+					.fontWeight(.regular)
+					.font(.system(.title))
+				).shadow(color: .black, radius: 5, x: 0, y: 0)
+				.multilineTextAlignment(.center)
+			
+			}.tag("home")
+                
+			ZStack {
             Color.blue
                 .ignoresSafeArea(.all,edges: .all)
-                .tag("toggle")
+				
+			Toggle.init("Nano6",isOn: $onOff)
+					.toggleStyle(NanoCustomToggle())
+			}.tag("toggle")
             
-            Color.gray
-                .ignoresSafeArea(.all,edges: .all)
-                .tag("heart")
+			ZStack {
+				Image("background-black")
+				 .resizable()
+				 .edgesIgnoringSafeArea(.all)
+				 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height, alignment: .center)
+				
+				HearthButton(isLiked: $checked)
+			}.tag("heart")
+			
             
         }
             
@@ -90,7 +111,19 @@ struct Home: View {
                     .frame(width: 30, height: 30)
                     
                     if image != tabs.last{Spacer(minLength: 0)}
-                    
+					
+//					switch image {
+//					case "home":
+//						HearthButton(isLiked: $checked)
+//					case "toggle":
+//						Toggle.init("Nano6",isOn: $onOff)
+//							.toggleStyle(NanoCustomToggle())
+//					case "heart":
+//						HearthButton(isLiked: $checked)
+//					default:
+//						HearthButton(isLiked: checked)
+//					}
+
                 }
             }
             .padding(.horizontal,40)
