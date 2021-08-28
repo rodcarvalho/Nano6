@@ -66,7 +66,7 @@ struct Home: View {
 				 .edgesIgnoringSafeArea(.all)
 				 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height, alignment: .center)
 				
-			Toggle.init("Nano6",isOn: $onOff)
+			Toggle.init("",isOn: $onOff)
 					.toggleStyle(NanoCustomToggle())
 			}.tag("toggle")
 			
